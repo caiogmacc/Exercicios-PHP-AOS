@@ -1,0 +1,32 @@
+<?php
+
+$pessoas = [
+  [
+    "nome" => "Pedro Henrique",
+    "idade" => 30,
+    "cidade" => "São Paulo",
+    "profissão" => "Padeiro"
+  ],
+  [
+    "nome" => "Jonas Pedro",
+    "idade" => 30,
+    "cidade" => "Santa Catarina",
+    "profissão" => "Químico"
+  ],
+  [
+    "nome" => "Henrique Pedro",
+    "idade" => 18,
+    "cidade" => "Tocantins",
+    "profissão" => "Estudante de Programação"
+  ]
+];
+
+
+for ($i = 0; $i < count($pessoas); $i++) {
+  $pessoa = $pessoas[$i];
+
+  
+  echo "- " . $pessoa["nome"] . " de " . $pessoa["cidade"] . " é " . $pessoa["profissao"] . " e tem " . $pessoa["idade"] . " anos.\n" ;
+}
+
+?>

@@ -1,0 +1,9 @@
+<?php
+
+function zeroToTen(){
+    for($i=1;$i<11;$i++){
+        echo "--{$i}--";
+    }
+}
+zeroToTen();
+?>

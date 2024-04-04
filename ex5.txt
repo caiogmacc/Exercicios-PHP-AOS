@@ -1,0 +1,33 @@
+<?php
+
+$pessoas = [
+    [
+        "nome" => "Pedro",
+        "idade" => 18,
+        "cidade" => "Paulínia",
+        "pode dirigir?" => NULL,
+    ],
+    [
+        "nome" => "Pedro Henrique",
+        "idade" => 12,
+        "cidade" => "Cooperlotes",
+        "pode dirigir?" => NULL,
+    ],
+    [
+        "nome" => "Jonas Pedro",
+        "idade" => 21,
+        "cidade" => "Campinas",
+        "pode dirigir?" => NULL,
+    ],
+];
+
+for($i=0;count($pessoas)>$i;$i++){
+    
+    if($pessoas[$i]["idade"]>= 18){
+        $pessoas[$i]["pode dirigir?"] = "pode dirigir";
+    }else {
+        $pessoas[$i]["pode dirigir?"] = "não pode dirigir";
+    }
+    echo "- " . $pessoas[$i]["nome"] . " é de " . $pessoas[$i]["cidade"] . " e tem " . $pessoas[$i]["idade"] . ", logo, " . $pessoas[$i]["pode dirigir?"] . "\n" ;
+}
+?>

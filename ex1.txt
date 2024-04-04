@@ -1,0 +1,22 @@
+<?php
+
+$numero = -2;
+
+function positiveOrNot ($numero){
+    if($numero == 0){
+     echo"zero";
+        
+    }
+    else if($numero < 0){
+       echo"negativo";
+        
+    }
+    else{
+       echo"positivo";
+        
+    }
+}
+
+positiveOrNot($numero);
+
+?>

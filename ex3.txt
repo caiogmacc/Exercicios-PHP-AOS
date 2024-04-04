@@ -1,0 +1,15 @@
+<?php
+
+
+$listaDeFrutas = [
+    "fruta1" => "Kiwi",
+    "fruta2" => "Uva",
+    "fruta3" => "Banana",
+    "fruta4" => "Laranja",
+    "fruta5" => "Melancia",
+];
+
+for($i=1;$i<6;$i++){
+    echo "{$i}. {$listaDeFrutas["fruta".($i)]}";
+}
+?>
